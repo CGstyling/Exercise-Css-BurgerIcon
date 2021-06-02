@@ -1,0 +1,17 @@
+:root {
+    --main-bg-color:#D84282;
+}
+#menu {
+    position: relative;
+    padding-left: 10px;
+}
+#menu:before {
+    content: "";
+    position: absolute;
+    top: 4px; /* dit zegt iets over de afstand van de elementen van elkaar */
+    left: 0;
+    width: 16px; /*deze 2 zijn de balkjes grootte */
+    height: 2px;
+    border-top: 6px double var(--main-bg-color); /* dit is het eerste balkje dat je een dubbele lijn geeft */
+    border-bottom: 2px solid var(--main-bg-color); /* dit is het onderste balkje */
+}
